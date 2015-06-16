@@ -3,4 +3,4 @@ from brave.config.application import applicationWillLunch
 from brave.models.deal import DealRecord
 if __name__ == '__main__':
     applicationWillLunch()
-    app.run(debug=True)
+    app.run(debug=True, port=2223)
