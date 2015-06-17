@@ -8,7 +8,7 @@ from flask.ext.api.decorators import set_parsers
 from flask.ext.api.decorators import set_renderers
 from flask.ext.api.renderers import JSONRenderer
 from flask import jsonify
-
+from ...utils.response import BraveErrorResponse, BraveResponse
 class DealRecordResource(Resource):
     def get(self):
-        return {"a":"a"}
+        return BraveResponse({"a":"a"})
