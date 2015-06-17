@@ -3,4 +3,4 @@ from brave.config.application import applicationWillLunch
 from brave.models.deal import DealRecord
 if __name__ == '__main__':
     applicationWillLunch()
-    app.run(debug=True)
+    app.run(host="172.22.155.27", debug=True)
