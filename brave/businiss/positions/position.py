@@ -6,6 +6,6 @@ from flask import Flask, request
 from ...utils.response import BraveErrorResponse, BraveResponse
 
 
-@app.route("/position/add")
-def AddPosition():
-    return BraveResponse({"data", request.args})
+class PositionResource(Resource):
+    def get(self):
+        return BraveResponse({"a":request.args})
